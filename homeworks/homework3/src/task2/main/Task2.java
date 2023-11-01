@@ -1,5 +1,5 @@
 public class Task2 {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static boolean numberInInterval(int m) {
+        return (m > 25 && m < 100);
     }
 }
