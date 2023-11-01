@@ -1,5 +1,5 @@
 public class Task1 {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static boolean evenOddNumber(int n) {
+        return (n % 2 == 0);
     }
 }
