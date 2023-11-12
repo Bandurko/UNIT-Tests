@@ -20,12 +20,12 @@ def test_lists_averages(list1, list2):
     nums_list = NumbersLists(list1, list2)
     assert nums_list.num_lists_averages() == (3, 9)
 
-@pytest.mark.parametrize('lst1, lst2, result', [([1, 2, 3], [], (2, 0)), ([], [1, 2, 3], (0, 2)), ([], [], (0, 0))])
+@pytest.mark.parametrize('lst1, lst2, result', [([1, 2, 3, 10], [], (4, 0)), ([], [1, 2, 3, 10], (0, 4)), ([], [], (0, 0))])
 def test_empty_lists_averages(lst1, lst2, result):
     nums_list = NumbersLists(lst1, lst2)
     assert nums_list.num_lists_averages() == result
 
-@pytest.mark.parametrize('lst1, lst2, result', [([1, 2, 3], [5], (2, 5)), ([5], [1, 2, 3], (5, 2)), ([5], [5], (5, 5))])
+@pytest.mark.parametrize('lst1, lst2, result', [([1, 2, 3], [7], (2, 7)), ([7], [1, 2, 3], (7, 2)), ([7], [7], (7, 7))])
 def test_one_elemented_lists_averages(lst1, lst2, result):
     nums_list = NumbersLists(lst1, lst2)
     assert nums_list.num_lists_averages() == result
